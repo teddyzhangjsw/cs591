@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}
+  </h1>
+
+</div>
+
+
+<div>
+
+
+  <ul>
+    <li *ngFor="let Info of info">
+      <b> {{Info.city}} </b> weather today: <br>  Temperature: {{Info.temp}} <br>
+      Wind Speed: {{Info.speed}} <br>
+      Description: {{Info.description}} <br> <br>
+    </li>
+  </ul>
+
+</div>
