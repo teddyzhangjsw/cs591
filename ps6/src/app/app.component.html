@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<div>
+  <h1>Please enter a city name:</h1>
+</div>
+
+<div>
+
+  <label>City:</label>&nbsp; <input type="text" [(ngModel)]="city.name" required>
+  &nbsp;
+  <button (click)=getWeather()>Query</button>
+
+</div>
+
+<app-display>[weatherDisplay]="weatherDisplay"></app-display>
+
+
